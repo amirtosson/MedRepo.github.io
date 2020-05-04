@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-ligh sticky-top MedRepo-header-bar-style col-md-16" >
+    <a class="navbar-brand"><img class="navbar-logo" alt="medRepo" role="button" routerLink="/home" src="/assets/Images/logobg.png" style="width: 3cm; height: 1cm;"></a>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+    <ul class="navbar-nav mr-auto" style="border: 1pt, black; ">
+        <li class="nav-item" *ngFor="let item of headerItems">
+            <h3 class="nav-link" style="margin-right:30px; border-style: solid;" role="button" [routerLink]="item.RouterLink">
+                <i [class]="item.Button" aria-hidden="true">
+                    {{item.Name}}
+                </i>
+                </h3>
+        </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0" style="margin-right: 3%;">
+        <div class="dropdown mr-sm-2">
+            <button class="btn fa-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" style="background: linear-gradient(to right, #086aeb 0%, #00cc66 100%);" aria-labelledby="dropdownMenuButton">
+                <div *ngFor="let dmbtn of headerDMItems">
+                    <button class="btn fa-2x" type="button" id="dropdownMenuButton" [routerLink]="dmbtn.RouterLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid black;">
+                        <i [class]="dmbtn.Button" aria-hidden="true">
+                            {{dmbtn.Name}}
+                        </i>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn fa-2x" type="button" id="dropdownMenuButton"  routerLink="/settings"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 1px solid black;">
+                        <i class="fa fa-cogs" aria-hidden="true"> 
+                            Setting
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </form>
+      <!-- <p role="status" class="statusOk" style="margin-left: 20px; margin-top: 7px; border-radius: 50%; width: 30px; height: 30px;" ></p> -->
+    </div>
+</nav>

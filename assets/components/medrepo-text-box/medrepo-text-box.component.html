@@ -1,0 +1,6 @@
+<div class="input-group" >
+    <input [type]="textType"  [class]=" theClass" name="medrepo-text-box" [placeholder]="medrepoPlaceHolder" [(ngModel)]="inputText" (input)="onTextChange()">
+    <span *ngIf="showButton">    
+        <button [class]="medrepoButton" (click)="onButtonClick()"></button>
+    </span>
+</div>

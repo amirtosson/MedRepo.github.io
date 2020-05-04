@@ -1,0 +1,17 @@
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0089fa 0%, #00cc66 100%);
+    color: black;
+    text-align: center;
+    font-style: oblique; 
+}
+
+footer{
+    position:fixed;
+    bottom:0px;
+    background-color:pink;
+    width:100%;
+    }

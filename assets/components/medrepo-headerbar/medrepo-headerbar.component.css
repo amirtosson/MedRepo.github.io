@@ -1,0 +1,18 @@
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.MedRepo-header-bar-style
+{
+    background: linear-gradient(to right, #0089fa 0%, #00cc66 100%)
+}
+
+.StatusNot
+{
+    background-color: red;
+}
+
+.statusOk
+{
+    background-color: #00cc66;
+}
